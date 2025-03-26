@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- meta 테그에요. UTF-8 인코딩이라고도 불리면서, 전세계 여러 언어들이 깨지지 않고 웹페이지에 표시될 수 있게 도와주는 역할을 해요 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport에요! viewport는 사용자가 내 웹사이트에 모바일로 접속했는지 컴퓨터로 접속했는지 화면 크기를 보고, 적절하게 디자인을 제공할때 꼭 필요한 테그에요. -->
+    <!-- viewport  -->
+    <title>Document</title>
+    
+    <!--
+    HEAD 부분에는 HTML 코드중 뇌의 역할을 담당하는 부분이에요 
+    
+    1. Meta 데이터라고 흔히 불리는 설정 요소가 들어가요.
+        (1) 우리가 흔히 찍는 사진아도 Meta 데이터하는게 있어요.
+            사진 정보에 사진을 찍은 시간, 장소 등등이 RAW 데이터로 들어가죠.
+        
+        (2) HTML의 Meta 데이터도 동일해요!
+            문서를 누가 작성하는지? 어떤 언어로 작성되는지? 등등 이런 정보들을 작성할 수 있어요
+
+        (3) 주로 카톡에 링크를 공유하면 사진처럼 같이 보내지는 미리보기 기능을 본적이 있죠?
+            이 기능도 Meta 테그에서 웹개발자가 설정해주는 거에요!
+
+    2. 당연히 제목도 여기서 설정해줄 수 있어요. 뇌에서도 우리가 누군지 알고 있는 것처럼요.
+
+    3.여기서 폰트를 지정해줄 수도 있어요! 
+        (1) 대표적으로 Google Font가 있어요 
+            https://fonts.google.com/
+            사이트에 방문해서 마음에 드는 폰트를 선택하고, 'Get Font'를 누르면, Embed 코드를 복사할 수 있어요. 코드의 예시로는 아래와 같아요.
+        
+    -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* ✨ 전체 페이지 스타일 */
+        body {
+            font-family: 'Winky Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* 배경을 화려한 그라데이션으로 설정 */
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+        }
+
+        /* ✨ 중앙 카드 스타일 */
+        .container {
+            background: rgba(255, 255, 255, 0.2); /* 반투명 효과 */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 400px;
+            backdrop-filter: blur(10px); /* 유리 느낌 효과 */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* 마우스를 올리면 약간 확대 */
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        /* ✨ 강조할 텍스트 스타일 */
+        strong {
+            color: #ffdd57;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* ✨ 부드러운 페이드인 효과 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+
+    <!--
+    코드를 사용하기위한 링크들의 집합체에요! 이제 CSS 코드에서 저 폰트를 호출해서 사용할 수 있어요!
+    
+    4. 마지막으로, CSS 코드랑 JavaScript 코드와 Link 해줄 수 있어요.
+        (1) CSS란?
+            뭔가 디게 어려워 보이죠. 근데 간단해요! 그럼 실습을 통해서 확인해볼까요?
+            'learning_html_1_styled.html' 파일을 live server로 실행해서 결과를 확인해봅시다!
+    -->
+</head>
+<body>
+   안녕하세요 이것은 HTML의 기본 구조입니다.
+</body>
+</html>
+
+<!-- 이건 주석이에요. 코드를 여러명이서 작성할때, 이 부분이 어떤 역할을 하는지 알 수 있도록 도와줘요. -->
