@@ -1,0 +1,48 @@
+/* ✨ 전체 페이지 스타일 */
+body {
+    font-family: 'Winky Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 배경을 화려한 그라데이션으로 설정 */
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+}
+
+/* ✨ 중앙 카드 스타일 */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* 반투명 효과 */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    backdrop-filter: blur(10px); /* 유리 느낌 효과 */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 마우스를 올리면 약간 확대 */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* ✨ 강조할 텍스트 스타일 */
+strong {
+    color: #ffdd57;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* ✨ 부드러운 페이드인 효과 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
